@@ -1,0 +1,266 @@
+%-------------------------
+% Resume in Latex
+% Author : James Marsh
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parseable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape James Marsh} \\ \vspace{1pt}
+    \small 360-721-2447 $|$ \href{mailto:james@jamesmarsh.dev}{\underline{james@jamesmarsh.dev}} $|$ 
+    \href{https://linkedin.com/in/james-marsh2111}{\underline{linkedin.com/in/james-marsh2111}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Montana State University}{Bozeman, MT}
+      {Bachelor of Science in Computer Science}{Expected Graduation: May 2023}
+      \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{Relevant Coursework}{: Data Structures \& Algorithms, Software Engineering, Full Stack Web Development, Programming Languages, Discrete Structures, Programming With C
+         }
+        }}
+     \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Technical Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Intern - Software Development}{July 2021 -- Present}
+      {Mackay Sposito}{(Remote) Vancouver, WA}
+      \resumeItemListStart
+        \resumeItem{Wrote a new web application to generate custom accounting reports (Javascript, R, and MySQL)}
+        \resumeItem{Developed additional functionality for employee benchmarking tools (Javascript, R, and MySQL)}
+        \resumeItem{Modeled power line repair procedures to forecast the impact of budget changes on repair time (Excel, VBA)}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+% -----------Saving as Examples-----------
+%    \resumeSubheading
+%      {Information Technology Support Specialist}{Sep. 2018 -- Present}
+%      {Southwestern University}{Georgetown, TX}
+%      \resumeItemListStart
+%        \resumeItem{Communicate with managers to set up campus computers used on campus}
+%        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+%        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+%    \resumeItemListEnd
+%
+%    \resumeSubheading
+%      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+%      {Southwestern University}{Georgetown, TX}
+%      \resumeItemListStart
+%        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+%        \resumeItem{Developed a game in Java to test the generated dungeons}
+%        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+%        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+%        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+%        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+%      \resumeItemListEnd
+% -------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{D\&D Web Character Builder} $|$ \emph{MongoDB, Express, React, NodeJS, Git}}{October 2021 -- Dec 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application with the MERN stack}
+            \resumeItem{Designed database schemas for user \& game data}
+            \resumeItem{Implemented a REST API using Express}
+            \resumeItem{Used Git for version control}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Reddit Post Generator} $|$ \emph{Python}}{February 2021}
+          \resumeItemListStart
+            \resumeItem{Developed an application to analyze posts on reddit and generate imitations}
+            \resumeItem{Utilized Python Reddit API Wrapper to scrape text from Reddit posts on the video game \emph{Path of Exile}}
+            \resumeItem{Parsed text to generate positive or negative “attitude score” for each post}
+            \resumeItem{Implemented Markov chain text generator to create posts reflecting the attitude of the forum each day}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sudoku Game \& Solutions Guide} $|$ \emph{Python}}{December 2020}
+          \resumeItemListStart
+            \resumeItem{Built a GUI to play the game of sudoku}
+            \resumeItem{Wrote an algorithm for solving easy sudoku games using basic elimination}
+            \resumeItem{Developed step by step solution/hint guide for new players.}
+            \resumeItem{Implemented generalized solution finder for any solvable game using backtracking algorithm}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{U.S. Roads Shortest Path Calculator} $|$ \emph{Java}}{March 2021}
+        \resumeItemListStart
+          \resumeItem{Built graph parser to generate a directed graph from a text file}
+          \resumeItem{Implemented Dijkstra’s algorithm to find shortest path between two vertices}
+          \resumeItem{Developed text UI to allow users to query shortest path between two vertices \& display the path, if available}
+          \resumeItem{Implemented GUI to visualize graph \& any found paths}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, R} \\
+%    \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, VS Code, Visual Studio, IntelliJ, NetBeans, Vi} \\
+%    \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Project Manager / Estimator}{June 2016 -- Aug. 2018}
+      {J's Custom Landscaping}{Vancouver, WA}
+      \resumeItemListStart
+        \resumeItem{Prepared detailed written proposals and work orders for landscaping projects and maintenance plans}
+        \resumeItem{Scheduled \& coordinated subcontractors, materials delivery, and employees}
+        \resumeItem{Managed foremen to ensure projects were completed to specifications in a timely manner}
+        \resumeItem{Communicated with contractors regarding scheduling, change orders, and completion status}
+        \resumeItem{Regularly worked with general contractors, business owners, property managers, homeowners associations, engineers, and government}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Project Foreman}{Dec. 2015 -- June 2016}
+      {J's Custom Landscaping}{Vancouver, WA}
+      \resumeItemListStart
+        \resumeItem{Managed crew of 2-4 people to follow blueprints \& complete work orders to install landscaping}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Irrigation Technician}{June 2013 -- Dec. 2015}
+      {J's Custom Landscaping}{Vancouver, WA}
+      \resumeItemListStart
+        \resumeItem{Performed irrigation inspection, installation, and repair; worked 40-60 hours per week}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
